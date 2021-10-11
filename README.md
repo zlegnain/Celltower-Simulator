@@ -17,9 +17,8 @@ using multithreading programming.
 
 
 # Disclaimer for Carleton Students
-- Code was wrriten for comp2401 assignment, and thus this is the property of Carleton University
-- Use of this code for assignments in Carleton is strictly prohibited.
-- 
+- Code was wrriten for comp2401 assignment, Hence this code is the property of the School of Computer Science.
+- Use of this code for plagiarism is prohibited.
 
 
 
