@@ -34,20 +34,20 @@ int main() {
   // Remove the line of code below.  Add code to spawn the necessary threads and
   // wait for their completion before exiting gracefully with some kind of message
 
-  /*create array of threads*/
+  //create array of threads
   pthread_t arr[7];
   pthread_t Dthread;
 
-  /*create display thread*/
+  //create display thread
   pthread_create(&Dthread,NULL,showSimulation, &ottawa);
 
-  /*spawn a thread for each cell tower*/
+  //spawn a thread for each cell tower
   for(int i=0;i<ottawa.numTowers;i++){
     pthread_create(&(arr[i]), NULL, handleIncomingRequests, &ottawa.towers[i]);
   }
 
 
-  /*join threads*/
+  //join threads
   for(int i=0;i<7;i++){
     pthread_join(arr[i], NULL);
   }
