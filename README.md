@@ -5,6 +5,7 @@ using multithreading programming.
 
 # Prerequisites
 - GNU compiler and Linux (I have not tested if it works on Windows)
+- EDIT: Application will not work on windows as it uses Xlib.h graphics library which is not supported on Windows
 
 # Instructions
 1. clone/download repository
