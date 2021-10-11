@@ -19,11 +19,11 @@ void main() {
   // Contact all the cell towers and ask them to shut down
   // ...
 
-  /*Loop through and send a command for each tower*/
+  //Loop through and send a command for each tower
   for(int i=0;i<7;i++){
     buffer[0] = command;
 
-    /*create client socket*/
+    //create client socket
     clientSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (clientSocket < 0) {
       printf("*** CLIENT ERROR: Could not open socket.\n");
@@ -35,7 +35,7 @@ void main() {
     serverAddress.sin_addr.s_addr = inet_addr(SERVER_IP);
     serverAddress.sin_port = htons((unsigned short) SERVER_PORT+i);
 
-    /*connect to server*/
+    //connect to server and send SHUTDOWN command
     status = connect(clientSocket, (struct sockaddr *) &serverAddress, sizeof(serverAddress));
     send(clientSocket, buffer, strlen((char*)buffer),0);
     close(clientSocket);
