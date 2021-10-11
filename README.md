@@ -16,9 +16,6 @@ using multithreading programming.
 7. To remove all object files in directory, simple clean the makefile by doing `make clean`
 
 
-# Disclaimer for Carleton Students
-- Code was wrriten for comp2401 assignment, Hence this code is the property of the School of Computer Science.
-- Use of this code for plagiarism is prohibited.
 
 
 
